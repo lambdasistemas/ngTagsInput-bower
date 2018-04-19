@@ -1,7 +1,7 @@
 {
   "name": "ng-tags-input-lambda",
   "license": "MIT",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "location": "https://github.com/lambdasistemas/ngTagsInput-bower",
   "homepage": "http://mbenford.github.io/ngTagsInput",
   "main": [

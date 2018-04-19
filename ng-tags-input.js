@@ -1,11 +1,11 @@
 /*!
- * ngTagsInput v3.1.2
+ * ngTagsInput v3.1.3
  * http://mbenford.github.io/ngTagsInput
  *
- * Copyright (c) 2013-2016 Michael Benford
+ * Copyright (c) 2013-2018 Michael Benford
  * License: MIT
  *
- * Generated at 2016-07-03 23:09:20 -0300
+ * Generated at 2018-04-19 11:45:19 -0300
  */
 (function() {
 'use strict';
@@ -442,7 +442,7 @@ tagsInput.directive('tagsInput', ["$timeout", "$document", "$window", "$q", "tag
                         addKeys = {},
                         shouldAdd, shouldRemove, shouldSelect, shouldEditLastTag,
                         newTagText = scope.newTag.text();
-                    if ((event.keyCode === 229) && (scope.text[newTagText.length -1] === ',')) {
+                    if ((event.keyCode === 229) && (scope.text !== undefined) && (scope.text[newTagText.length -1] === ',')) {
                         key = KEYS.comma;
                         newTagText = newTagText.slice(0, -1);  // Remove comma
                     }
